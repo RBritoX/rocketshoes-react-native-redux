@@ -27,11 +27,7 @@ class Main extends Component {
   };
 
   async componentDidMount() {
-    this.getProducts();
-  }
-
-  getProducts = async () => {
-    const response = await api.get('/products');
+    const response = await api.get('products');
 
     const data = response.data.map(product => ({
       ...product,
@@ -39,7 +35,7 @@ class Main extends Component {
     }));
 
     this.setState({ products: data });
-  };
+  }
 
   handleAddProduct = id => {
     const { addToCartRequest } = this.props;

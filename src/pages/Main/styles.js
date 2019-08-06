@@ -4,12 +4,16 @@ import colors from '../../styles/colors';
 
 export const Container = styled.View`
   background: ${colors.dark};
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Product = styled.View`
+  display: flex;
+  flex-direction: column;
   background: #fff;
   padding: 10px;
-  margin: 15px;
+  margin: 100px 15px 15px 15px;
   border-radius: 4px;
   width: 220px;
 `;

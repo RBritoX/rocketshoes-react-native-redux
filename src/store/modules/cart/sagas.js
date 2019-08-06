@@ -1,4 +1,4 @@
-import { Alert } from 'react-native'
+import { Alert } from 'react-native';
 import { call, put, all, select, takeLatest } from 'redux-saga/effects';
 import NavigationService from '../../../services/navigation';
 
@@ -36,7 +36,7 @@ function* addToCart({ id }) {
 
     yield put(addToCartSuccess(data));
 
-    NavigationService.navigate('Cart')
+    NavigationService.navigate('Cart');
 
     // history.push('/cart');
   }
